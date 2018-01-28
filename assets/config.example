@@ -1,5 +1,5 @@
 {
-  "id": "hunter",
+  "id": "hunter2",
   "guest": {
     "id": "party0519",
     "allowedEvents": [
@@ -29,12 +29,14 @@
         "locked": {
           "type": "bool",
           "default": true,
-          "$handler": "(value) => !!parseInt(value, 10)"
+          "$handler":
+            "(value) => !!parseInt(value, 10)"
         },
         "ajar": {
           "type": "bool",
           "default": false,
-          "$handler": "(value) => !!parseInt(value, 10)"
+          "$handler":
+            "(value) => !!parseInt(value, 10)"
         }
       }
     },

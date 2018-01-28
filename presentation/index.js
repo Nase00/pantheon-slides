@@ -9,7 +9,7 @@ import pantheonPost from "../assets/pantheon-post.png";
 
 require("normalize.css");
 require("../assets/monokai.css");
-require("./styles.css")
+require("./styles.css");
 
 const theme = createTheme(
   {
@@ -89,24 +89,24 @@ export default class Presentation extends React.Component {
         <CodeSlide
           transition={["fade"]}
           lang="json"
-          code={require("raw-loader!../assets/event.example")}
+          code={require("raw-loader!../assets/config.example")}
           showLineNumbers={false}
           ranges={[
-            { loc: [0, 15], title: "Example event sequence" },
-            { loc: [1, 2], note: "Flash green desk light" },
-            { loc: [2, 6], note: "Unlock gate" },
-            { loc: [7, 14], note: "Queue up song upon opening door" }
+            { loc: [0, 0], title: "Tenant configuration" },
+            { loc: [2, 10], note: "Restrict guest access" },
+            { loc: [27, 40], note: "Set custom state" }
           ]}
         />
         <CodeSlide
           transition={["fade"]}
           lang="json"
-          code={require("raw-loader!../assets/config.example")}
+          code={require("raw-loader!../assets/event.example")}
           showLineNumbers={false}
           ranges={[
-            { loc: [0, 191], title: "Tenant configuration" },
-            { loc: [2, 10], note: "Restrict guest access" },
-            { loc: [27, 39], note: "Set custom state" }
+            { loc: [0, 0], title: "Example event sequence" },
+            { loc: [1, 5], note: "Flash green desk light" },
+            { loc: [5, 10], note: "Unlock gate" },
+            { loc: [10, 18], note: "Queue up song upon opening door" }
           ]}
         />
       </Deck>

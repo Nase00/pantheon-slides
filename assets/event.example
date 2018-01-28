@@ -1,5 +1,8 @@
 [
-  { "type": "EMIT_FORWARD_HTTP_REQUEST", "key": "flashGreen" },
+  {
+    "type": "EMIT_FORWARD_HTTP_REQUEST",
+    "key": "flashGreen"
+  },
   {
     "type": "EMIT_FORWARD_HTTP_REQUEST",
     "key": "buzz",
@@ -12,5 +15,16 @@
     "delay": 10000,
     "device_id": "eaf15736daea2d8c550795950c984067b6a3df12",
     "conditions": { "locked": false, "ajar": true }
+  },
+  {
+    type: 'EMIT_SEND_SPOTIFY_COMMAND',
+    name: 'playerShuffle',
+    state: true,
+    "delay": 10000,
+    "device_id": "eaf15736daea2d8c550795950c984067b6a3df12",
+    "conditions": { "locked": false, "ajar": true }
   }
 ]
+
+
+
