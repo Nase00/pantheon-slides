@@ -1,0 +1,192 @@
+{
+  "id": "hunter",
+  "guest": {
+    "id": "party0519",
+    "allowedEvents": [
+      "EMIT_FORWARD_HTTP_REQUEST",
+      "EMIT_SEND_SPOTIFY_COMMAND",
+      "EMIT_SEND_HUE_COMMAND"
+    ]
+  },
+  "proxyHost": "http://acheron.herokuapp.com",
+  "hueUserIDs": {
+    "192.168.1.112": "Tis0987654321234567890987654321"
+  },
+  "unified": {
+    "hostname": "192.168.1.107"
+  },
+  "spotify": {
+    "clientId": "abcdefg123451234567890",
+    "clientSecret": "12345678901234567890",
+    "blacklisted-permissions": []
+  },
+  "photons": {
+    "deadbolt": {
+      "auth": "12345678901234567890",
+      "deviceId": "09876543210987654321",
+      "name": "toggle",
+      "$state": {
+        "locked": {
+          "type": "bool",
+          "default": true,
+          "$handler": "(value) => !!parseInt(value, 10)"
+        },
+        "ajar": {
+          "type": "bool",
+          "default": false,
+          "$handler": "(value) => !!parseInt(value, 10)"
+        }
+      }
+    },
+    "secretary": {
+      "auth": "774786bda370734769194e7d19bc9eac8149e711",
+      "deviceId": "2c0021000547343339373536",
+      "name": "pc-sound",
+      "argument": "togglePower"
+    },
+    "lamprey": {
+      "auth": "774786bda370734769194e7d19bc9eac8149e711",
+      "deviceId": "22002c000a51353335323535",
+      "name": "pc-power",
+      "argument": "togglePower"
+    }
+  },
+  "httpRequests": {
+    "buzz": {
+      "options": {
+        "path": "/api/press",
+        "port": 8080,
+        "hostname": "192.168.1.109"
+      }
+    },
+    "rain": {
+      "options": {
+        "path": "/api/trigger",
+        "port": 4001,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "boardKey": "1",
+          "accessoryKey": "deskLight",
+          "effect": "rain"
+        }
+      }
+    },
+    "cylon": {
+      "options": {
+        "path": "/api/trigger",
+        "port": 4001,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "boardKey": "1",
+          "accessoryKey": "deskLight",
+          "effect": "cylon"
+        }
+      }
+    },
+    "flashRed": {
+      "options": {
+        "path": "/api/trigger",
+        "port": 4001,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "boardKey": "1",
+          "accessoryKey": "deskLight",
+          "effect": "flash",
+          "params": {
+            "color": "red"
+          }
+        }
+      }
+    },
+    "flashGreen": {
+      "options": {
+        "path": "/api/trigger",
+        "port": 4001,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "boardKey": "1",
+          "accessoryKey": "deskLight",
+          "effect": "flash",
+          "params": {
+            "color": "green"
+          }
+        }
+      }
+    },
+    "flashPurple": {
+      "options": {
+        "path": "/api/trigger",
+        "port": 4001,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "boardKey": "1",
+          "accessoryKey": "deskLight",
+          "effect": "flash",
+          "params": {
+            "color": "purple"
+          }
+        }
+      }
+    },
+    "flashBlue": {
+      "options": {
+        "path": "/api/trigger",
+        "port": 4001,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "boardKey": "1",
+          "accessoryKey": "deskLight",
+          "effect": "flash",
+          "params": {
+            "color": "blue"
+          }
+        }
+      },
+      "$state": {
+        "mock": {
+          "type": "bool",
+          "default": "foo",
+          "$handler": "(value) => value"
+        },
+        "mock2": {
+          "type": "bool",
+          "default": "foo",
+          "$handler": "(value) => value"
+        }
+      }
+    },
+    "deskRaise": {
+      "options": {
+        "path": "/api",
+        "port": 8080,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "pinPropKey": "deskRaise",
+          "timeout": 100
+        }
+      }
+    },
+    "deskLower": {
+      "options": {
+        "path": "/api",
+        "port": 8080,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "pinPropKey": "deskLower",
+          "timeout": 100
+        }
+      }
+    },
+    "deskPreset": {
+      "options": {
+        "path": "/api",
+        "port": 8080,
+        "hostname": "192.168.1.155",
+        "headers": {
+          "pinPropKey": "deskPreset",
+          "timeout": 9000
+        }
+      }
+    }
+  }
+}

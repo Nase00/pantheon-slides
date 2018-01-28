@@ -1,0 +1,16 @@
+[
+  { "type": "EMIT_FORWARD_HTTP_REQUEST", "key": "flashGreen" },
+  {
+    "type": "EMIT_FORWARD_HTTP_REQUEST",
+    "key": "buzz",
+    "body": { "code": "hunter" }
+  },
+  {
+    "type": "EMIT_SEND_SPOTIFY_COMMAND",
+    "name": "playerPlay",
+    "uris": ["spotify:track:6bmiCq5ClXjnGQIScg8MKQ"],
+    "delay": 10000,
+    "device_id": "eaf15736daea2d8c550795950c984067b6a3df12",
+    "conditions": { "locked": false, "ajar": true }
+  }
+]
