@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build":
-      "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
+      "npm run clean && cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx .",
     "deploy":
       "cp ./index.html ./dist/index.html && git subtree push --prefix dist origin gh-pages",
