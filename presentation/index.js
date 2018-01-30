@@ -3,6 +3,7 @@ import CodeSlide from "spectacle-code-slide";
 import { Deck, Heading, ListItem, List, Slide, Text } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 
+import switchboard from "../assets/switchboard.jpg";
 import spaghettiBath from "../assets/spaghetti-bath.jpg";
 import pantheonPre from "../assets/pantheon-pre.png";
 import pantheonPost from "../assets/pantheon-post.png";
@@ -40,9 +41,21 @@ export default class Presentation extends React.Component {
             Universal IoT Integration
           </Text>
         </Slide>
+        <Slide transition={["fade"]} bgColor="tertiary">
+          <Heading size={5} textColor="secondary" caps>
+            The heck is it?
+          </Heading>
+          <img
+            src={switchboard}
+            style={{ borderRadius: "60px", maxWidth: "600px" }}
+          />
+          <Text size={2} textColor="secondary" style={{ fontSize: "8px" }}>
+            (credit: Wikipedia)
+          </Text>
+        </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="tertiary">
           <Heading size={5} textColor="secondary" caps>
-            Some Common Communication Protocols
+            Variety of Communication Protocols can be Abstracted
           </Heading>
           <List>
             <ListItem>WiFi</ListItem>
