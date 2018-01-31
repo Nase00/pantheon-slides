@@ -43,7 +43,7 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={5} textColor="secondary" caps>
-            The heck is it?
+            Da fuq does that mean?
           </Heading>
           <img
             src={switchboard}
